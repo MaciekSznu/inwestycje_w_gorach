@@ -459,8 +459,99 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.footer__newsletter-form--button img {
+  height: 20px;
+  -webkit-filter: invert(25%) sepia(1%) saturate(560%) hue-rotate(22deg) brightness(96%) contrast(82%);
+          filter: invert(25%) sepia(1%) saturate(560%) hue-rotate(22deg) brightness(96%) contrast(82%);
+}
+
+.footer__contact--header {
+  text-align: center;
+  color: #b89535;
+  font-family: "Ivy Mode";
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.footer__contact--phone, .footer__contact--email {
+  display: block;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+
+.footer__contact--phone {
   color: #ffffff;
-  font-size: 24px;
+}
+
+.footer__contact--email {
+  color: #b89535;
+}
+
+.footer__contact--social-links {
+  margin: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contact--social-links.facebook-link img, .footer__contact--social-links.instagram-link img {
+  width: 40px;
+  height: auto;
+  -webkit-filter: invert(58%) sepia(32%) saturate(791%) hue-rotate(6deg) brightness(95%) contrast(91%);
+          filter: invert(58%) sepia(32%) saturate(791%) hue-rotate(6deg) brightness(95%) contrast(91%);
+}
+
+.footer__contact--social-links.facebook-link img:hover, .footer__contact--social-links.instagram-link img:hover {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.footer__contact--social-links.facebook-link {
+  margin-right: 40px;
+}
+
+.footer__privacy-policy {
+  border-top: 1px solid #4a4a49;
+  padding: 12px 0 8px;
+}
+
+.footer__privacy-policy--link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Ivy Mode";
+  font-weight: 300;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__copyrights {
+  padding: 0;
+}
+
+.footer__copyrights--link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Ivy Mode";
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer__copyrights--link span {
+  color: #b89535;
 }
 
 body {

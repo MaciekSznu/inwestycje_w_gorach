@@ -1,0 +1,76 @@
+@import "./_variables";
+@import "./_mixins";
+
+.investments {
+  max-width: 100vw;
+  height: auto;
+  padding: 40px 20px;
+
+  &__lead-text {
+    margin-top: 0;
+    color: $gold;
+    font-family: $ivymode;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 300;
+    font-style: normal;
+
+    span {
+      color: $dark;
+      font-weight: normal;
+    }
+  }
+
+  &__paragraph {
+    position: relative;
+    font-family: $nunito;
+    font-size: 18px;
+    line-height: 22px;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      content: "";
+      @include dots;
+    }
+  }
+
+  &-wrapper {
+    // padding: 20px;
+    // background: $beige;
+    padding-top: 80px;
+
+    .single-investment {
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+
+      &__image {
+        width: calc(100vw - 40px);
+        height: calc((100vw - 40px) / 16 * 9);
+        background: url("./images/heroes/hero_01_1920_1080.jpg");
+        background-size: cover;
+      }
+      &__name {
+        font-family: $ivymode;
+        font-size: 24px;
+        color: $dark;
+        font-weight: 300;
+        font-style: normal;
+        margin-bottom: 12px;
+      }
+      &__city {
+        font-family: $nunito;
+        font-size: 18px;
+        color: $dark;
+        font-weight: 300;
+        margin: 0;
+      }
+
+      &:not(:nth-of-type(1)) {
+        padding-top: 60px;
+      }
+    }
+  }
+}

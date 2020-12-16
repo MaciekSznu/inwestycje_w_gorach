@@ -5,14 +5,11 @@
   max-width: 100vw;
   height: auto;
   padding: 64px 20px;
-  // display: flex;
-  // justify-content: flex-start;
-  // align-items: center;
 
   &__lead-text {
     margin-top: 0;
     color: $gold;
-    font-family: "Ivy Mode";
+    font-family: $ivymode;
     font-size: 32px;
     line-height: 42px;
     font-weight: 300;
@@ -34,8 +31,17 @@
   }
 
   &__paragraph {
+    position: relative;
     font-family: $nunito;
     font-size: 18px;
     line-height: 22px;
+
+    &:last-of-type::after {
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      content: "";
+      @include dots;
+    }
   }
 }

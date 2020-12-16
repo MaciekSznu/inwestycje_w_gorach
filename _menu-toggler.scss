@@ -1,0 +1,84 @@
+@import "./_variables";
+@import "./_mixins";
+
+.menu__toggler {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: $navbar-height-mobile;
+  background-color: transparent;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .hamburger-menu {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 17px;
+    outline: transparent;
+    cursor: pointer;
+    overflow: hidden;
+
+    &-line {
+      position: relative;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: $gold;
+      border-radius: 1px;
+      transition: transform 1s 0.2s ease;
+
+      &:after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: 10px;
+        background: inherit;
+        border-radius: 1px;
+        transition: transform 1.2s 0.2s ease;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 10px;
+        background: inherit;
+        border-radius: 1px;
+        transition: transform 1s 0.2s ease;
+      }
+    }
+
+    &:focus {
+      color: $gold;
+    }
+  }
+
+  .hamburger-active .hamburger-menu-line {
+    transform: scaleX(0.25);
+    border-radius: 1px;
+  }
+
+  .hamburger-active .hamburger-menu-line:before {
+    transform: scaleX(8) translateX(0.5px);
+    border-radius: 1px;
+  }
+
+  .hamburger-active .hamburger-menu-line:after {
+    transform: scaleX(8) translateX(-1px);
+    border-radius: 1px;
+  }
+}

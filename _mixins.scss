@@ -1,0 +1,21 @@
+@import "./_variables.scss";
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin dots {
+  width: 80px;
+  height: 20px;
+  background-color: $gold;
+  border-radius: 4px;
+  opacity: 0.75;
+}

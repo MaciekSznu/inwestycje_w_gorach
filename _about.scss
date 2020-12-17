@@ -9,32 +9,12 @@
   &__lead-text {
     margin-top: 0;
     color: $gold;
-    font-family: $ivymode;
-    font-size: 32px;
-    line-height: 42px;
-    font-weight: 300;
-    font-style: normal;
-
-    span {
-      color: $dark;
-      font-weight: normal;
-
-      // &:after {
-      //   position: absolute;
-      //   left: 50%;
-      //   bottom: -60px;
-      //   transform: translateX(-50%);
-      //   content: "";
-      //   @include dots;
-      // }
-    }
+    @include section-title;
   }
 
   &__paragraph {
     position: relative;
-    font-family: $nunito;
-    font-size: 18px;
-    line-height: 22px;
+    @include section-paragraph;
 
     &:last-of-type::after {
       position: absolute;

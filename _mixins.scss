@@ -19,3 +19,46 @@
   border-radius: 4px;
   opacity: 0.75;
 }
+
+@mixin lead-text {
+  text-align: center;
+  color: $white;
+  font-family: $ivymode;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 300;
+  font-style: normal;
+
+  @media screen and (min-width: 768px) {
+    font-size: 64px;
+    line-height: 80px;
+  }
+}
+
+@mixin section-title {
+  font-family: $ivymode;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 300;
+  font-style: normal;
+
+  span {
+    color: $dark;
+    font-weight: normal;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 72px;
+  }
+}
+
+@mixin section-paragraph {
+  font-family: $nunito;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 80%;
+  }
+}

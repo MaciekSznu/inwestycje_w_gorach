@@ -9,23 +9,12 @@
   &__lead-text {
     margin-top: 0;
     color: $gold;
-    font-family: $ivymode;
-    font-size: 32px;
-    line-height: 42px;
-    font-weight: 300;
-    font-style: normal;
-
-    span {
-      color: $dark;
-      font-weight: normal;
-    }
+    @include section-title;
   }
 
   &__paragraph {
     position: relative;
-    font-family: $nunito;
-    font-size: 18px;
-    line-height: 22px;
+    @include section-paragraph;
 
     &:after {
       position: absolute;
@@ -37,8 +26,6 @@
   }
 
   &-wrapper {
-    // padding: 20px;
-    // background: $beige;
     padding-top: 80px;
 
     .single-investment {
@@ -70,6 +57,26 @@
 
       &:not(:nth-of-type(1)) {
         padding-top: 60px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 80px 20px 80px;
+      display: grid;
+      grid-template-columns: minmax(40%, 1fr) minmax(40%, 1fr);
+      grid-gap: 60px 40px;
+
+      .single-investment {
+        height: auto;
+        &__image {
+          width: 100%;
+          max-width: 100%;
+          height: calc((100vw - 120px) / 16 * 9 / 2);
+        }
+
+        &:not(:nth-of-type(1)) {
+          padding-top: 0;
+        }
       }
     }
   }

@@ -4,8 +4,7 @@
 .gallery {
   max-width: 100vw;
   height: 100vh;
-  // padding: 40px 20px;
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 
   &__image {
     position: relative;
@@ -22,13 +21,7 @@
       width: 100%;
       max-width: 100vw;
       z-index: 2;
-      text-align: center;
-      color: $white;
-      font-family: $ivymode;
-      font-size: 32px;
-      line-height: 42px;
-      font-weight: 300;
-      font-style: normal;
+      @include lead-text;
 
       &:after {
         position: absolute;
@@ -39,5 +32,8 @@
         @include dots;
       }
     }
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 96px;
   }
 }

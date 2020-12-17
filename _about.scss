@@ -5,6 +5,9 @@
   max-width: 100vw;
   height: auto;
   padding: 64px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__lead-text {
     margin-top: 0;

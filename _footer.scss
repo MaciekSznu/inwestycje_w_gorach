@@ -7,6 +7,10 @@
   background: $dark-bg;
   padding: 40px 20px;
 
+  @media screen and (min-width: 1192px) {
+    padding: 40px calc((100vw - 1152px) / 2);
+  }
+
   &__logo {
     color: $white;
     height: 60px;
@@ -51,6 +55,12 @@
       &:nth-of-type(6) {
         grid-area: city-06;
       }
+    }
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 0;
+      grid-template-areas: "city-01 city-02 city-03 city-04 city-05 city-06";
     }
   }
 

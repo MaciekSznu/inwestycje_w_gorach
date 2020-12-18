@@ -69,6 +69,37 @@
       &:not(:nth-of-type(1)) {
         padding-top: 60px;
       }
+
+      &:nth-of-type(2) {
+        .single-investment__image {
+          background: url("./images/heroes/hero_02_1920_1080.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(3) {
+        .single-investment__image {
+          background: url("./images/heroes/hero_03_1920_1080.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(4) {
+        .single-investment__image {
+          background: url("./images/heroes/hero_04_1920_1080.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(5) {
+        .single-investment__image {
+          background: url("./images/heroes/flowers_01_1920_1080.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(6) {
+        .single-investment__image {
+          background: url("./images/heroes/ornament_01_1920_1080.jpg");
+          background-size: cover;
+        }
+      }
     }
 
     @media screen and (min-width: 768px) {

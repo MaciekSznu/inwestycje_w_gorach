@@ -1,0 +1,44 @@
+@import "./_variables";
+@import "./_mixins";
+
+.single-datas {
+  padding: 0 20px;
+  .datas-wrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      padding: 0;
+    }
+    .datas__box {
+      @include datas-box;
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        &:last-of-type {
+          margin-bottom: 20px;
+        }
+      }
+      &--title {
+        font-family: $ivymode;
+        font-size: 20px;
+        color: $gold;
+        font-weight: normal;
+        letter-spacing: 1.1px;
+        margin-top: 16px;
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      &--value {
+        font-family: $nunito;
+        font-size: 18px;
+        color: $dark;
+        font-weight: 500;
+        margin: 16px 0;
+      }
+    }
+  }
+}

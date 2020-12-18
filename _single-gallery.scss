@@ -41,7 +41,7 @@
       &__image {
         width: calc(100vw - 40px);
         height: calc((100vw - 40px) / 16 * 9);
-        background: url("./images/heroes/hero_01_1920_1080.jpg");
+        background: url("./images/enklawa_polany/1.jpg");
         background-size: cover;
         transition: transform 1s;
 
@@ -50,25 +50,63 @@
         // }
       }
 
-      // &__name {
-      //   font-family: $ivymode;
-      //   font-size: 24px;
-      //   color: $dark;
-      //   font-weight: 300;
-      //   font-style: normal;
-      //   margin-bottom: 12px;
-      //   z-index: 2;
-      // }
-      // &__city {
-      //   font-family: $nunito;
-      //   font-size: 18px;
-      //   color: $dark;
-      //   font-weight: 300;
-      //   margin: 0;
-      // }
-
       &:not(:nth-of-type(1)) {
         padding-top: 40px;
+      }
+
+      &:nth-of-type(2) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/2.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(3) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/3.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(4) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/4.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(5) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/5.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(6) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/6.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(7) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/7.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(8) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/8.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(9) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/9.jpg");
+          background-size: cover;
+        }
+      }
+      &:nth-of-type(10) {
+        .single-gallery-item__image {
+          background: url("./images/enklawa_polany/10.jpg");
+          background-size: cover;
+        }
       }
     }
 

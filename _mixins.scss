@@ -59,11 +59,30 @@
   }
 
   @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 80%;
     font-size: 56px;
     line-height: 72px;
   }
   @media screen and (min-width: 1152px) {
+    max-width: 1152px;
+  }
+}
+
+@mixin city {
+  font-family: $ivymode;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 300;
+  font-style: normal;
+
+  @media screen and (min-width: 768px) {
     width: 100%;
+    max-width: 80%;
+    font-size: 36px;
+    line-height: 60px;
+  }
+  @media screen and (min-width: 1152px) {
     max-width: 1152px;
   }
 }
@@ -82,4 +101,36 @@
     align-self: flex-start;
     margin-left: calc((100vw - 1152px) / 2 - 20px);
   }
+}
+
+@mixin single-paragraph {
+  font-family: $nunito;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: 1152px) {
+    max-width: 50%;
+    align-self: flex-start;
+    margin-left: calc((100vw - 1152px) / 2 - 20px);
+  }
+}
+
+@mixin datas-box {
+  min-width: 240px;
+  min-height: 80px;
+  border: 1px dashed $gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: 768px) {
+    width: 30%;
+  }
+  // padding-left: 16px;
 }

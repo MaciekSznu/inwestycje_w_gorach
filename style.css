@@ -227,6 +227,8 @@
 
 @media screen and (min-width: 768px) {
   .about__lead-text {
+    width: 100%;
+    max-width: 80%;
     font-size: 56px;
     line-height: 72px;
   }
@@ -234,7 +236,6 @@
 
 @media screen and (min-width: 1152px) {
   .about__lead-text {
-    width: 100%;
     max-width: 1152px;
   }
 }
@@ -306,6 +307,8 @@
 
 @media screen and (min-width: 768px) {
   .investments__lead-text {
+    width: 100%;
+    max-width: 80%;
     font-size: 56px;
     line-height: 72px;
   }
@@ -313,7 +316,6 @@
 
 @media screen and (min-width: 1152px) {
   .investments__lead-text {
-    width: 100%;
     max-width: 1152px;
   }
 }

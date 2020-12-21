@@ -15,19 +15,6 @@
     @include section-title;
   }
 
-  // &__paragraph {
-  //   position: relative;
-  //   @include section-paragraph;
-
-  //   &:after {
-  //     position: absolute;
-  //     left: 0;
-  //     bottom: -40px;
-  //     content: "";
-  //     @include dots;
-  //   }
-  // }
-
   &-wrapper {
     padding-top: 40px;
     width: 100%;
@@ -149,14 +136,10 @@
     @media screen and (min-width: 1152px) {
       max-width: 1152px;
       justify-content: center;
-      // padding: 80px 30px 80px;
-      // grid-template-columns: 536px 536px;
-      // grid-gap: 60px 80px;
 
       .single-gallery-item {
         &__image {
           width: 100%;
-          // height: calc(536px / 16 * 9);
         }
       }
     }

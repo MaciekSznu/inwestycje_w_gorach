@@ -75,6 +75,22 @@
         </div>
       </div>
     </section>
+    <section class="single-datas-01">
+      <div class="datas-wrapper">
+        <div class="datas__box">
+          <p class="datas__box--title">Termin realizacji</p>
+          <p class="datas__box--value">IV kwartał 2021 r.</p>
+        </div>
+        <div class="datas__box">
+          <p class="datas__box--title">Powierzchnie apartamentów</p>
+          <p class="datas__box--value">24 - 195 m2</p>
+        </div>
+        <div class="datas__box">
+          <p class="datas__box--title">Cena m2</p>
+          <p class="datas__box--value">od 12 600 zł</p>
+        </div>
+      </div>
+    </section>
     <section class="single-gallery">
       <h2 class="single-gallery__lead-text">Galeria</h2>
       <!-- <p class="investments__paragraph">
@@ -119,16 +135,73 @@
         <h4 class="gallery__image--title">Najlepsze oferty</h4>
       </div>
     </section> -->
+    <section class="contact-form-wrapper">
+      <h2 class="contact-form__lead-text">Zamów <span>rozmowę</span></h2>
+      <form action="" id="contact-form" class="contact-form" method="post">
+        <div class="input-wrapper">
+          <input
+            id="input-name"
+            class="contact-form--input-name"
+            type="text"
+            name="imie"
+            aria-required="true"
+            aria-invalid="false"
+            placeholder="Imię (wymagane)"
+          />
+        </div>
+        <div class="input-wrapper">
+          <input
+            id="input-email"
+            class="contact-form--input-email"
+            type="email"
+            name="email"
+            aria-required="true"
+            aria-invalid="false"
+            placeholder="E-mail (wymagane)"
+          />
+        </div>
+        <div class="input-wrapper">
+          <input
+            id="input-phone"
+            class="contact-form--input-phone"
+            type="tel"
+            name="telefon"
+            aria-required="true"
+            aria-invalid="false"
+            placeholder="Telefon (wymagane)"
+          />
+        </div>
+        <div class="input-wrapper">
+          <textarea
+            id="input-message"
+            class="contact-form--input-message"
+            name="message"
+            aria-required="true"
+            aria-invalid="false"
+            placeholder="Wiadomość (wymagane)"
+          ></textarea>
+        </div>
+        <!-- <div class="disclaimer">
+          <span
+            >Klikając "Wyślij wiadomość" akceptujesz naszą
+            <a href="<?php echo home_url(); ?>/politykaprywatnosci" target="_blank" rel="noopener noreferrer"
+              >politykę prywatności</a
+            >.</span
+          >
+        </div> -->
+        <input name="submit" class="contact-form--input-submit" type="submit" value="Wyślij wiadomość" />
+      </form>
+    </section>
     <footer class="footer">
       <section class="footer__logo">LOGO</section>
-      <section class="footer__cities">
+      <!-- <section class="footer__cities">
         <p class="footer__cities--city">Zakopane</p>
         <p class="footer__cities--city">Białka Tatrzańska</p>
         <p class="footer__cities--city">Kościelisko</p>
         <p class="footer__cities--city">Bukowina Tatrzańska</p>
         <p class="footer__cities--city">Witów</p>
         <p class="footer__cities--city">Jurgów</p>
-      </section>
+      </section> -->
       <section class="footer__newsletter">
         <h4 class="footer__newsletter--title">
           Bądź na bieżąco <br />

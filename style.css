@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   height: 64px;
-  background-color: transparent;
+  background: transparent;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,6 +20,26 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.menu__toggler .menu__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__toggler .menu__logo {
+    height: 90px;
+  }
+}
+
+.menu__toggler .menu__logo--img {
+  height: 100%;
+  width: auto;
 }
 
 .menu__toggler .hamburger-menu {
@@ -561,14 +581,28 @@
 }
 
 .footer__logo {
-  color: #ffffff;
-  height: 60px;
-  line-height: 60px;
-  font-size: 32px;
-  font-family: "Ivy Mode";
-  font-weight: 300;
+  height: 80px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    height: 96px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    height: 120px;
+    margin-bottom: 64px;
+  }
+}
+
+.footer__logo--img {
+  height: 100%;
+  width: auto;
 }
 
 .footer__cities {
@@ -858,6 +892,7 @@ body {
 textarea,
 input[type="text"],
 input[type="button"],
+input[type="email"],
 input[type="submit"] {
   -webkit-appearance: none;
   border-radius: 0;

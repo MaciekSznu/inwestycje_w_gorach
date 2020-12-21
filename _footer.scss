@@ -12,14 +12,24 @@
   }
 
   &__logo {
-    color: $white;
-    height: 60px;
-    line-height: 60px;
-    font-size: 32px;
-    font-family: $ivymode;
-    font-weight: 300;
+    height: 80px;
     text-align: center;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      height: 96px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      height: 120px;
+      margin-bottom: 64px;
+    }
+
+    &--img {
+      height: 100%;
+      width: auto;
+    }
   }
 
   &__cities {

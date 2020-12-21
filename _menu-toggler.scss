@@ -10,11 +10,30 @@
   margin: 0;
   padding: 0;
   height: $navbar-height-mobile;
-  background-color: transparent;
+  background: transparent;
+  // background: rgba($dark, 0.65);
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  .menu__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $navbar-height-mobile;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      height: $navbar-height-desktop;
+    }
+
+    &--img {
+      height: 100%;
+      width: auto;
+    }
+  }
 
   .hamburger-menu {
     width: 30px;

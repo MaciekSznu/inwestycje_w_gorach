@@ -1,13 +1,34 @@
-// "use strict";
+'use strict';
 
-// const stickyBar = document.getElementById("sticky-bar");
+/* BASE FUNCTIONS */
+const click = (target, callback) => {
+  target.addEventListener('click', (e) => {
+    return callback(e)
+  });
+};
 
-// const getWindowHeight = (top) => {
-//   let viewportHeight = window.innerHeight;
-//   console.log(stickyBar.style);
-//   stickyBar.style.top = viewportHeight + "px";
-// };
+/* BURGER MENU */
+const hamburgerButton = document.querySelector('.hamburger-menu');
+const mainMenu = document.querySelector('.menu-wrapper');
 
-// getWindowHeight();
+const showMainMenu = () => {
+  mainMenu.classList.toggle('visible');
+};
 
-// window.addEventListener("resize", getWindowHeight);
+const hamburgerActive = () => {
+  hamburgerButton.classList.toggle('hamburger-active');
+};
+
+hamburgerButton.addEventListener('click', (e) => {
+  showMainMenu();
+  hamburgerActive();
+});
+
+const menuItems = document.querySelectorAll('.menu__item--link');
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', (e) => {
+    showMainMenu();
+    hamburgerActive();
+  });
+});

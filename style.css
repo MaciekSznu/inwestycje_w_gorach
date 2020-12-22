@@ -50,7 +50,7 @@
   margin: 0;
   padding: 0;
   margin-right: 17px;
-  outline: transparent;
+  outline: #b89535;
   cursor: pointer;
   overflow: hidden;
 }
@@ -135,6 +135,168 @@
   .menu__toggler .hamburger-menu-line:before {
     bottom: 15px;
   }
+}
+
+.menu-wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #212121;
+  z-index: 5;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+.menu-wrapper .menu {
+  margin: 25vh 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-wrapper .menu__item {
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.menu-wrapper .menu__item--link {
+  text-decoration: none;
+  font-family: "Ivy Mode";
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.menu-wrapper .menu__contact {
+  margin-top: 40px;
+}
+
+.menu-wrapper .menu__contact--phone, .menu-wrapper .menu__contact--email {
+  display: block;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+
+.menu-wrapper .menu__contact--phone {
+  color: #ffffff;
+}
+
+.menu-wrapper .menu__contact--email {
+  color: #b89535;
+}
+
+.menu-wrapper .menu__contact--social-links {
+  margin: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-wrapper .menu__contact--social-links.facebook-link img, .menu-wrapper .menu__contact--social-links.instagram-link img {
+  width: 20px;
+  height: auto;
+  -webkit-filter: invert(58%) sepia(32%) saturate(791%) hue-rotate(6deg) brightness(95%) contrast(91%);
+          filter: invert(58%) sepia(32%) saturate(791%) hue-rotate(6deg) brightness(95%) contrast(91%);
+}
+
+.menu-wrapper .menu__contact--social-links.facebook-link img:hover, .menu-wrapper .menu__contact--social-links.instagram-link img:hover {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.menu-wrapper .menu__contact--social-links.facebook-link {
+  margin-right: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-wrapper .menu {
+    margin: 25vh 0 0 0;
+  }
+  .menu-wrapper .menu__item {
+    margin-bottom: 24px;
+  }
+  .menu-wrapper .menu__item--link {
+    font-size: 48px;
+  }
+  .menu-wrapper .menu__contact {
+    margin-top: 64px;
+  }
+  .menu-wrapper .menu__contact--social-links.facebook-link img, .menu-wrapper .menu__contact--social-links.instagram-link img {
+    width: 24px;
+    height: auto;
+  }
+  .menu-wrapper .menu__contact--social-links.facebook-link {
+    margin-right: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "menu contact";
+  }
+  .menu-wrapper .menu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: menu;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    padding: 0 0 64px 64px;
+  }
+  .menu-wrapper .menu__item {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  .menu-wrapper .menu__item--link {
+    font-size: 48px;
+  }
+  .menu-wrapper .menu__contact {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: contact;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-top: 0;
+    padding: 0 64px 64px 0;
+  }
+  .menu-wrapper .menu__contact--phone, .menu-wrapper .menu__contact--email {
+    text-align: right;
+  }
+  .menu-wrapper .menu__contact--social-links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu-wrapper .menu__contact--social-links.facebook-link {
+    margin-right: 48px;
+  }
+}
+
+.menu-wrapper.visible {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .hero {
@@ -911,7 +1073,7 @@ body #sticky-bar {
   top: 0;
   width: 100vw;
   background-color: #ffffff;
-  z-index: 5;
+  z-index: 4;
   height: 64px;
 }
 

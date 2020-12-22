@@ -3,6 +3,7 @@
 @import "./_mixins.scss";
 @import "./_variables.scss";
 @import "./_menu-toggler.scss";
+@import "./_menu.scss";
 @import "./_hero.scss";
 @import "./_about.scss";
 @import "./_investments.scss";
@@ -29,7 +30,7 @@ body {
     top: 0;
     width: 100vw;
     background-color: $white;
-    z-index: 5;
+    z-index: 4;
     height: $navbar-height-mobile;
 
     @media screen and (min-width: 768px) {

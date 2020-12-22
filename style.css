@@ -576,25 +576,33 @@
 .map {
   max-width: 100vw;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .map-image {
-  margin: 0 20px;
-  width: 100%;
+  width: calc(100vw - 40px);
   height: calc((100vw - 40px) * 0.4323);
-  max-width: 1152px;
   max-height: 498px;
   background: url("./images/enklawa_polany/map_clear_resized.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 @media screen and (min-width: 768px) {
   .map {
-    padding-bottom: 96px;
+    padding: 0;
+    margin-bottom: 80px;
   }
+}
+
+@media screen and (min-width: 1192px) {
   .map-image {
-    margin: 0 auto;
+    max-width: 1152px;
   }
 }
 

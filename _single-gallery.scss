@@ -95,12 +95,12 @@
           background-size: cover;
         }
       }
-      &:nth-of-type(11) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/map_clear_resized.jpg");
-          background-size: cover;
-        }
-      }
+      // &:nth-of-type(11) {
+      //   .single-gallery-item__image {
+      //     background: url("./images/enklawa_polany/map_clear_resized.jpg");
+      //     background-size: cover;
+      //   }
+      // }
     }
 
     @media screen and (min-width: 768px) {

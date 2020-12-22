@@ -27,13 +27,13 @@
     position: relative;
     @include single-paragraph;
 
-    &:last-of-type::after {
-      position: absolute;
-      left: 0;
-      bottom: -40px;
-      content: "";
-      @include dots;
-    }
+    // &:last-of-type::after {
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: -40px;
+    //   content: "";
+    //   @include dots;
+    // }
 
     span {
       color: $gold;

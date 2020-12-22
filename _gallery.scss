@@ -33,20 +33,31 @@
       }
     }
   }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 96px;
+  }
+}
 
-  &__image--single {
-    margin-left: calc((100vw - 1152px) / 2);
-    position: relative;
+//single
+.map {
+  max-width: 100vw;
+  margin-bottom: 64px;
+
+  &-image {
+    margin: 0 20px;
     width: 100%;
-    height: auto;
-    min-height: 100%;
+    height: calc((100vw - 40px) * 0.4323);
     max-width: 1152px;
+    max-height: 498px;
 
     background: url("./images/enklawa_polany/map_clear_resized.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
   }
   @media screen and (min-width: 768px) {
     padding-bottom: 96px;
+    &-image {
+      margin: 0 auto;
+    }
   }
 }

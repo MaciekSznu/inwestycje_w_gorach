@@ -146,6 +146,7 @@
       .single-gallery-item {
         &__image {
           width: 100%;
+          height: calc((1152px - 80px) / 16 * 9 / 3);
         }
       }
     }

@@ -103,9 +103,10 @@
     }
 
     @media screen and (min-width: 768px) {
+      width: 100%;
       padding: 80px 20px 80px;
       display: grid;
-      grid-template-columns: minmax(40%, 1fr) minmax(40%, 1fr);
+      grid-template-columns: minmax(40%, 536px) minmax(40%, 536px);
       grid-gap: 60px 40px;
 
       .single-investment {
@@ -136,7 +137,6 @@
     @media screen and (min-width: 1280px) {
       justify-content: center;
       padding: 80px 30px 80px;
-      grid-template-columns: 536px 536px;
       grid-gap: 60px 80px;
 
       .single-investment {

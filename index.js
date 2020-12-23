@@ -24,11 +24,28 @@ hamburgerButton.addEventListener('click', (e) => {
   hamburgerActive();
 });
 
+const menuImageContainer = document.querySelector('.menu-image-container');
+
+const showMenuImage = () => {
+  menuImageContainer.classList.add('visible');
+};
+
+const hideMenuImage = () => {
+  menuImageContainer.classList.remove('visible');
+};
+
 const menuItems = document.querySelectorAll('.menu__item--link');
+
 
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', (e) => {
     showMainMenu();
     hamburgerActive();
   });
+  menuItem.addEventListener('mouseenter', (e) => {
+    showMenuImage();
+  });
+  menuItem.addEventListener('mouseleave', (e) => {
+    hideMenuImage();
+  })
 });

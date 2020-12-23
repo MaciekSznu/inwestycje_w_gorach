@@ -166,11 +166,24 @@
 }
 
 .menu-wrapper .menu__item--link {
+  display: inline-block;
   text-decoration: none;
   font-family: "Ivy Mode";
   color: #ffffff;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 300;
+  -webkit-transition: color 0.5s ease-in-out, -webkit-transform 0.5s;
+  transition: color 0.5s ease-in-out, -webkit-transform 0.5s;
+  transition: color 0.5s ease-in-out, transform 0.5s;
+  transition: color 0.5s ease-in-out, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.menu-wrapper .menu__item--link:hover {
+  color: #b89535;
+  transform: skewX(-15deg);
+  -webkit-transform: skewX(-15deg);
+  -moz-transform: skewX(-15deg);
+  -o-transform: skewX(-15deg);
 }
 
 .menu-wrapper .menu__contact {
@@ -219,6 +232,10 @@
 
 .menu-wrapper .menu__contact--social-links.facebook-link {
   margin-right: 32px;
+}
+
+.menu-wrapper .menu-image-container {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -291,6 +308,23 @@
   }
   .menu-wrapper .menu__contact--social-links.facebook-link {
     margin-right: 48px;
+  }
+  .menu-wrapper .menu-image-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 37%;
+    width: 35%;
+    height: 100%;
+    background: url("./images/heroes/flowers_01_1920_1080.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+  }
+  .menu-wrapper .menu-image-container.visible {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
   }
 }
 

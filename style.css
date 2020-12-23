@@ -165,6 +165,7 @@
   transition: transform 1s ease-out;
   transition: transform 1s ease-out, -webkit-transform 1s ease-out;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .menu-wrapper .menu {
@@ -347,6 +348,7 @@
 .menu-wrapper.visible {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  visibility: visible;
 }
 
 .hero {

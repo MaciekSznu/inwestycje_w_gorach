@@ -320,6 +320,8 @@
     background-size: cover;
     background-position: center;
     opacity: 0;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
   }
   .menu-wrapper .menu-image-container.visible {
     opacity: 1;

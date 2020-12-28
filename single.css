@@ -473,10 +473,38 @@
 
 .test-hero {
   background: url("./images/heroes/hero_01_1920_1080.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .test-hero:nth-of-type(2) {
-  background: url("./images/heroes/test_01.jpg");
+  background: url("./images/heroes/hero_03_1920_1080.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.test-hero:nth-of-type(3) {
+  background: url("./images/heroes/hero_04_1920_1080.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.test-hero:nth-of-type(4) {
+  background: url("./images/heroes/mountains_01_1920_1080.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.test-hero:nth-of-type(5) {
+  background: url("./images/heroes/winter_01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.test-hero:nth-of-type(4) {
+  background: url("./images/heroes/winter_02.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .single-about {

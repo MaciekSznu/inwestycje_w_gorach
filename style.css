@@ -419,7 +419,7 @@
 .hero .lead-text {
   position: absolute;
   left: 0;
-  bottom: 25%;
+  bottom: 20%;
   width: 100%;
   max-width: 100vw;
   z-index: 2;
@@ -430,6 +430,8 @@
   line-height: 42px;
   font-weight: 300;
   font-style: normal;
+  color: #b89535;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 768px) {
@@ -453,7 +455,7 @@
 }
 
 .hero .lead-text span {
-  color: #b89535;
+  color: white;
   font-weight: normal;
 }
 

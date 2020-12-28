@@ -19,14 +19,16 @@
   .lead-text {
     position: absolute;
     left: 0;
-    bottom: 25%;
+    bottom: 20%;
     width: 100%;
     max-width: 100vw;
     z-index: 2;
     @include lead-text;
+    color: $gold;
+    font-weight: normal;
 
     span {
-      color: $gold;
+      color: white;
       font-weight: normal;
 
       &:after {

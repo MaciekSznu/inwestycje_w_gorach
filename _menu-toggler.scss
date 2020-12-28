@@ -11,8 +11,6 @@
   padding: 0;
   height: $navbar-height-mobile;
   background: transparent;
-  // background: rgb(255, 255, 255);
-  // background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.05) 100%);
   z-index: 10;
   display: flex;
   align-items: center;
@@ -36,94 +34,127 @@
     }
 
     &--img {
-      height: 50%;
+      height: 55%;
       width: auto;
     }
   }
 
-  .hamburger-menu {
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    margin: 0;
+  .hamburger {
+    height: 100%;
     padding: 0;
-    margin-right: 17px;
-    outline: $gold;
+    display: inline-block;
     cursor: pointer;
-    overflow: hidden;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    margin-right: 16px;
+    transition: transform 0.3s 0.1s ease-in-out;
 
-    &-line {
+    .hamburger__box {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
       position: relative;
-      display: block;
-      height: 2px;
-      width: 100%;
-      background: $gold;
-      border-radius: 1px;
-      transition: transform 1s 0.2s ease;
+      cursor: pointer;
 
-      &:after {
-        position: absolute;
-        content: "";
-        height: 2px;
-        width: 100%;
-        left: 0;
-        top: 10px;
-        background: inherit;
-        border-radius: 1px;
-        transition: transform 1.2s 0.2s ease;
-      }
+      .hamburger__line {
+        @include hamburger-line;
 
-      &:before {
-        position: absolute;
-        content: "";
-        height: 2px;
-        width: 100%;
         left: 0;
-        bottom: 10px;
-        background: inherit;
-        border-radius: 1px;
-        transition: transform 1s 0.2s ease;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.5s ease-in-out;
+
+        &::before,
+        &::after {
+          @include hamburger-line;
+
+          content: "";
+          left: 0;
+          transition: transform 0.5s 0.2s ease-in-out;
+        }
+
+        &::before {
+          top: -10px;
+        }
+
+        &::after {
+          top: 10px;
+        }
       }
     }
+  }
 
-    &:focus {
-      color: $gold;
+  .hamburger--active .hamburger__box .hamburger__line {
+    background-color: transparent;
+    // transition: background-color 0.5s 0.5s ease-in-out;
+  }
+
+  .hamburger--active .hamburger__line:before {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger--active .hamburger__line:after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      margin-right: 32px;
     }
-  }
-
-  .hamburger-active .hamburger-menu-line {
-    transform: scaleX(0.25);
-    border-radius: 1px;
-  }
-
-  .hamburger-active .hamburger-menu-line:before {
-    transform: scaleX(8) translateX(0.5px);
-    border-radius: 1px;
-  }
-
-  .hamburger-active .hamburger-menu-line:after {
-    transform: scaleX(8) translateX(-1px);
-    border-radius: 1px;
   }
 
   @media screen and (min-width: 1024px) {
     height: $navbar-height-desktop;
 
-    .hamburger-menu {
-      width: 40px;
-      height: 40px;
-      margin-right: 37px;
+    .hamburger {
+      margin-right: 64px;
 
-      &-line {
-        &:after {
-          top: 15px;
-        }
+      .hamburger__box {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
 
-        &:before {
-          bottom: 15px;
+        .hamburger__line {
+          @include hamburger-line;
+
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: background-color 0.5s ease-in-out;
+
+          &::before,
+          &::after {
+            @include hamburger-line;
+
+            content: "";
+            left: 0;
+            transition: transform 0.5s 0.2s ease-in-out;
+          }
+
+          &::before {
+            top: -15px;
+          }
+
+          &::after {
+            top: 15px;
+          }
         }
       }
+    }
+
+    .hamburger--active .hamburger__box .hamburger__line {
+      background-color: transparent;
+    }
+
+    .hamburger--active .hamburger__line:before {
+      transform: translateY(15px) rotate(45deg);
+    }
+
+    .hamburger--active .hamburger__line:after {
+      transform: translateY(-15px) rotate(-45deg);
     }
   }
 }

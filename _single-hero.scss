@@ -40,3 +40,13 @@
     }
   }
 }
+
+.test-hero {
+  @extend .hero;
+
+  background: url("./images/heroes/hero_01_1920_1080.jpg");
+
+  &:nth-of-type(2) {
+    background: url("./images/heroes/test_01.jpg");
+  }
+}

@@ -394,7 +394,7 @@
   transition: transform 1s ease-out, -webkit-transform 1s ease-out;
 }
 
-.hero {
+.hero, .test-hero {
   position: relative;
   margin: 0;
   padding: 0;
@@ -416,7 +416,7 @@
           align-items: center;
 }
 
-.hero .lead-text {
+.hero .lead-text, .test-hero .lead-text {
   position: absolute;
   left: 0;
   bottom: 25%;
@@ -433,31 +433,31 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero .lead-text {
+  .hero .lead-text, .test-hero .lead-text {
     font-size: 64px;
     line-height: 80px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .hero .lead-text {
+  .hero .lead-text, .test-hero .lead-text {
     font-size: 80px;
     line-height: 96px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero .lead-text br {
+  .hero .lead-text br, .test-hero .lead-text br {
     display: none;
   }
 }
 
-.hero .lead-text span {
+.hero .lead-text span, .test-hero .lead-text span {
   color: #b89535;
   font-weight: normal;
 }
 
-.hero .lead-text span:after {
+.hero .lead-text span:after, .test-hero .lead-text span:after {
   position: absolute;
   left: 50%;
   bottom: -60px;
@@ -469,6 +469,14 @@
   background: url("./images/dots.svg");
   background-repeat: repeat-x;
   opacity: 0.85;
+}
+
+.test-hero {
+  background: url("./images/heroes/hero_01_1920_1080.jpg");
+}
+
+.test-hero:nth-of-type(2) {
+  background: url("./images/heroes/test_01.jpg");
 }
 
 .single-about {

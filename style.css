@@ -71,7 +71,7 @@
 .menu__toggler .hamburger-menu-line {
   position: relative;
   display: block;
-  height: 1px;
+  height: 2px;
   width: 100%;
   background: #b89535;
   border-radius: 1px;
@@ -84,7 +84,7 @@
 .menu__toggler .hamburger-menu-line:after {
   position: absolute;
   content: "";
-  height: 1px;
+  height: 2px;
   width: 100%;
   left: 0;
   top: 10px;
@@ -99,7 +99,7 @@
 .menu__toggler .hamburger-menu-line:before {
   position: absolute;
   content: "";
-  height: 1px;
+  height: 2px;
   width: 100%;
   left: 0;
   bottom: 10px;
@@ -359,7 +359,7 @@
   max-width: 100vw;
   height: 100vh;
   min-height: calc(100vh - 64px);
-  background-image: url("./images/heroes/hero_01_1920_1080.jpg");
+  background-image: url("./images/heroes/hero_02_1920_1080.jpg");
   background-size: cover;
   background-position: center;
   display: -webkit-box;

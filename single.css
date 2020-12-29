@@ -464,7 +464,7 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   content: "";
-  width: 80px;
+  width: 76px;
   height: 20px;
   background: url("./images/dots.svg");
   background-repeat: repeat-x;
@@ -680,7 +680,7 @@
   left: 0;
   bottom: -40px;
   content: "";
-  width: 80px;
+  width: 76px;
   height: 20px;
   background: url("./images/dots.svg");
   background-repeat: repeat-x;
@@ -698,7 +698,13 @@
   overflow: hidden;
 }
 
-.investments-wrapper .single-investment__image {
+.investments-wrapper .single-investment-image-wrapper {
+  width: calc(100vw - 40px);
+  height: calc((100vw - 40px) / 16 * 9);
+  overflow: hidden;
+}
+
+.investments-wrapper .single-investment-image-wrapper .single-investment__image {
   width: calc(100vw - 40px);
   height: calc((100vw - 40px) / 16 * 9);
   background: url("./images/heroes/hero_01_1920_1080.jpg");
@@ -709,7 +715,7 @@
   transition: transform 1s, -webkit-transform 1s;
 }
 
-.investments-wrapper .single-investment__image:hover {
+.investments-wrapper .single-investment-image-wrapper .single-investment__image:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -774,7 +780,12 @@
   .investments-wrapper .single-investment {
     height: auto;
   }
-  .investments-wrapper .single-investment__image {
+  .investments-wrapper .single-investment-image-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: calc((100vw - 120px) / 16 * 9 / 2);
+  }
+  .investments-wrapper .single-investment-image-wrapper .single-investment__image {
     width: 100%;
     max-width: 100%;
     height: calc((100vw - 120px) / 16 * 9 / 2);
@@ -789,7 +800,10 @@
     padding: 80px 30px 80px;
     grid-gap: 60px 80px;
   }
-  .investments-wrapper .single-investment__image {
+  .investments-wrapper .single-investment-image-wrapper {
+    height: calc((100vw - 180px) / 16 * 9 / 2);
+  }
+  .investments-wrapper .single-investment-image-wrapper .single-investment__image {
     height: calc((100vw - 180px) / 16 * 9 / 2);
   }
 }
@@ -802,7 +816,11 @@
     padding: 80px 30px 80px;
     grid-gap: 60px 80px;
   }
-  .investments-wrapper .single-investment__image {
+  .investments-wrapper .single-investment-image-wrapper {
+    width: 100%;
+    height: calc(536px / 16 * 9);
+  }
+  .investments-wrapper .single-investment-image-wrapper__image {
     width: 100%;
     height: calc(536px / 16 * 9);
   }
@@ -866,7 +884,7 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   content: "";
-  width: 80px;
+  width: 76px;
   height: 20px;
   background: url("./images/dots.svg");
   background-repeat: repeat-x;
@@ -1455,61 +1473,10 @@
 .single-gallery-wrapper .single-gallery-item__image {
   width: calc(100vw - 40px);
   height: calc((100vw - 40px) / 16 * 9);
-  background: url("./images/enklawa_polany/1.jpg");
-  background-size: cover;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
 }
 
 .single-gallery-wrapper .single-gallery-item:not(:nth-of-type(1)) {
   padding-top: 40px;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(2) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/2.jpg");
-  background-size: cover;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(3) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/3.jpg");
-  background-size: cover;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(4) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/4.jpg");
-  background-size: cover;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(5) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/5.jpg");
-  background-size: cover;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(6) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/6.jpg");
-  background-size: cover;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(7) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/7.jpg");
-  background-size: cover;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(8) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/8.jpg");
-  background-size: cover;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(9) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/9.jpg");
-  background-size: cover;
-}
-
-.single-gallery-wrapper .single-gallery-item:nth-of-type(10) .single-gallery-item__image {
-  background: url("./images/enklawa_polany/10.jpg");
-  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {

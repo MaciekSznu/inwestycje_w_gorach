@@ -37,15 +37,21 @@
       cursor: pointer;
       overflow: hidden;
 
-      &__image {
+      &-image-wrapper {
         width: calc(100vw - 40px);
         height: calc((100vw - 40px) / 16 * 9);
-        background: url("./images/heroes/hero_01_1920_1080.jpg");
-        background-size: cover;
-        transition: transform 1s;
+        overflow: hidden;
 
-        &:hover {
-          transform: scale(1.05);
+        .single-investment__image {
+          width: calc(100vw - 40px);
+          height: calc((100vw - 40px) / 16 * 9);
+          background: url("./images/heroes/hero_01_1920_1080.jpg");
+          background-size: cover;
+          transition: transform 1s;
+
+          &:hover {
+            transform: scale(1.05);
+          }
         }
       }
 
@@ -111,10 +117,17 @@
 
       .single-investment {
         height: auto;
-        &__image {
+
+        &-image-wrapper {
           width: 100%;
           max-width: 100%;
           height: calc((100vw - 120px) / 16 * 9 / 2);
+
+          .single-investment__image {
+            width: 100%;
+            max-width: 100%;
+            height: calc((100vw - 120px) / 16 * 9 / 2);
+          }
         }
 
         &:not(:nth-of-type(1)) {
@@ -128,8 +141,12 @@
       grid-gap: 60px 80px;
 
       .single-investment {
-        &__image {
+        &-image-wrapper {
           height: calc((100vw - 180px) / 16 * 9 / 2);
+
+          .single-investment__image {
+            height: calc((100vw - 180px) / 16 * 9 / 2);
+          }
         }
       }
     }
@@ -140,9 +157,14 @@
       grid-gap: 60px 80px;
 
       .single-investment {
-        &__image {
+        &-image-wrapper {
           width: 100%;
           height: calc(536px / 16 * 9);
+
+          &__image {
+            width: 100%;
+            height: calc(536px / 16 * 9);
+          }
         }
       }
     }

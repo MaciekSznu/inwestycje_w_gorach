@@ -28,79 +28,11 @@
       &__image {
         width: calc(100vw - 40px);
         height: calc((100vw - 40px) / 16 * 9);
-        background: url("./images/enklawa_polany/1.jpg");
-        background-size: cover;
-        transition: transform 1s;
-
-        // &:hover {
-        //   transform: scale(1.05);
-        // }
       }
 
       &:not(:nth-of-type(1)) {
         padding-top: 40px;
       }
-
-      &:nth-of-type(2) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/2.jpg");
-          background-size: cover;
-        }
-      }
-      &:nth-of-type(3) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/3.jpg");
-          background-size: cover;
-        }
-      }
-      &:nth-of-type(4) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/4.jpg");
-          background-size: cover;
-        }
-      }
-      &:nth-of-type(5) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/5.jpg");
-          background-size: cover;
-        }
-      }
-      &:nth-of-type(6) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/6.jpg");
-          background-size: cover;
-        }
-      }
-      &:nth-of-type(7) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/7.jpg");
-          background-size: cover;
-        }
-      }
-      &:nth-of-type(8) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/8.jpg");
-          background-size: cover;
-        }
-      }
-      &:nth-of-type(9) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/9.jpg");
-          background-size: cover;
-        }
-      }
-      &:nth-of-type(10) {
-        .single-gallery-item__image {
-          background: url("./images/enklawa_polany/10.jpg");
-          background-size: cover;
-        }
-      }
-      // &:nth-of-type(11) {
-      //   .single-gallery-item__image {
-      //     background: url("./images/enklawa_polany/map_clear_resized.jpg");
-      //     background-size: cover;
-      //   }
-      // }
     }
 
     @media screen and (min-width: 768px) {

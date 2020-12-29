@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./single.css" />
+    <!-- GLIGHTBOX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <title>Inwestycje w górach</title>
   </head>
   <body>
@@ -105,38 +107,38 @@
     <section class="single-gallery">
       <h2 class="single-gallery__lead-text">Galeria</h2>
       <div class="single-gallery-wrapper">
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/1.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/1.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/2.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/2.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/3.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/3.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/4.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/4.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/5.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/5.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/6.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/6.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/7.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/7.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/8.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/8.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/9.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/9.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
+        <a href="./images/enklawa_polany/10.jpg" class="single-gallery-item">
           <img src="./images/enklawa_polany/10.jpg" class="single-gallery-item__image" alt="" />
         </a>
-        <a href="" class="single-gallery-item">
-          <img src="./images/enklawa_polany/1.jpg" class="single-gallery-item__image" alt="" />
+        <a href="./images/enklawa_polany/hero_infran.jpg" class="single-gallery-item">
+          <img src="./images/enklawa_polany/hero_infran.jpg" class="single-gallery-item__image" alt="" />
         </a>
       </div>
     </section>
@@ -249,5 +251,15 @@
       </section>
     </footer>
     <script src="index.js"></script>
+    <!-- GLIGHTBOX -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        selector: ".single-gallery-item",
+        touchNavigation: true,
+        loop: true,
+        closeButton: true,
+      });
+    </script>
   </body>
 </html>

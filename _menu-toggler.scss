@@ -41,6 +41,7 @@
 
   .hamburger {
     height: 100%;
+    width: $navbar-height-mobile;
     padding: 0;
     display: inline-block;
     cursor: pointer;
@@ -49,6 +50,11 @@
     margin: 0;
     margin-right: 16px;
     transition: transform 0.3s 0.1s ease-in-out;
+    outline: none;
+
+    &:focus {
+      outline: $gold solid 1px;
+    }
 
     .hamburger__box {
       width: 30px;
@@ -98,17 +104,11 @@
     transform: translateY(-10px) rotate(-45deg);
   }
 
-  @media screen and (min-width: 768px) {
-    .hamburger {
-      margin-right: 32px;
-    }
-  }
-
   @media screen and (min-width: 1024px) {
     height: $navbar-height-desktop;
 
     .hamburger {
-      margin-right: 64px;
+      width: $navbar-height-desktop;
 
       .hamburger__box {
         width: 40px;

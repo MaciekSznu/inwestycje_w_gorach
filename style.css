@@ -57,6 +57,7 @@
 
 .menu__toggler .hamburger {
   height: 100%;
+  width: 64px;
   padding: 0;
   display: inline-block;
   cursor: pointer;
@@ -68,6 +69,11 @@
   transition: -webkit-transform 0.3s 0.1s ease-in-out;
   transition: transform 0.3s 0.1s ease-in-out;
   transition: transform 0.3s 0.1s ease-in-out, -webkit-transform 0.3s 0.1s ease-in-out;
+  outline: none;
+}
+
+.menu__toggler .hamburger:focus {
+  outline: #b89535 solid 1px;
 }
 
 .menu__toggler .hamburger .hamburger__box {
@@ -126,18 +132,12 @@
           transform: translateY(-10px) rotate(-45deg);
 }
 
-@media screen and (min-width: 768px) {
-  .menu__toggler .hamburger {
-    margin-right: 32px;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .menu__toggler {
     height: 90px;
   }
   .menu__toggler .hamburger {
-    margin-right: 64px;
+    width: 90px;
   }
   .menu__toggler .hamburger .hamburger__box {
     width: 40px;

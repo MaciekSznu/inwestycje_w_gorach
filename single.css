@@ -826,110 +826,6 @@
   }
 }
 
-.gallery {
-  max-width: 100vw;
-  height: 100vh;
-  margin-bottom: 64px;
-}
-
-.gallery__image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url("./images/heroes/hero_01_1920_1080.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.gallery__image--title {
-  position: absolute;
-  left: 0;
-  bottom: 25%;
-  width: 100%;
-  max-width: 100vw;
-  z-index: 2;
-  text-align: center;
-  color: #ffffff;
-  font-family: "Ivy Mode";
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 300;
-  font-style: normal;
-}
-
-@media screen and (min-width: 768px) {
-  .gallery__image--title {
-    font-size: 64px;
-    line-height: 80px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .gallery__image--title {
-    font-size: 80px;
-    line-height: 96px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .gallery__image--title br {
-    display: none;
-  }
-}
-
-.gallery__image--title:after {
-  position: absolute;
-  left: 50%;
-  bottom: -60px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  content: "";
-  width: 76px;
-  height: 20px;
-  background: url("./images/dots.svg");
-  background-repeat: repeat-x;
-  opacity: 0.85;
-}
-
-@media screen and (min-width: 768px) {
-  .gallery {
-    padding-bottom: 96px;
-  }
-}
-
-.map {
-  max-width: 100vw;
-  margin-bottom: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.map-image {
-  width: calc(100vw - 40px);
-  height: calc((100vw - 40px) * 0.4323);
-  max-height: 498px;
-  background: url("./images/enklawa_polany/map_clear_resized.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-@media screen and (min-width: 768px) {
-  .map {
-    padding: 0;
-    margin-bottom: 80px;
-  }
-}
-
-@media screen and (min-width: 1192px) {
-  .map-image {
-    max-width: 1152px;
-  }
-}
-
 .footer {
   max-width: 100vw;
   height: auto;
@@ -1308,110 +1204,6 @@
   }
 }
 
-.single-datas-01 {
-  margin-top: 20px;
-  padding: 20 20px;
-}
-
-.single-datas-01 .datas-wrapper {
-  background: #f0ebe5;
-  padding: 20px 0;
-}
-
-.single-datas-01 .datas-wrapper .datas__box {
-  min-width: 240px;
-  min-height: 80px;
-  border: 1px dashed #b89535;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  border: none;
-}
-
-.single-datas-01 .datas-wrapper .datas__box:not(:last-of-type) {
-  margin-bottom: 20px;
-}
-
-.single-datas-01 .datas-wrapper .datas__box--title {
-  font-family: "Ivy Mode";
-  font-size: 20px;
-  color: #b89535;
-  font-weight: normal;
-  letter-spacing: 1.1px;
-  margin-top: 16px;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.single-datas-01 .datas-wrapper .datas__box--value {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
-  color: #4a4a49;
-  font-weight: 500;
-  margin: 16px 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .single-datas-01 .datas-wrapper {
-    display: -ms-grid;
-    display: grid;
-    padding: 20px 0 20px;
-    width: 100%;
-    max-width: 100%;
-    height: 160px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: minmax(25%, 1fr) minmax(25%, 1fr) minmax(25%, 1fr);
-        grid-template-columns: minmax(25%, 1fr) minmax(25%, 1fr) minmax(25%, 1fr);
-        grid-template-areas: "data-01 data-02 data-03";
-    grid-gap: 40px;
-  }
-  .single-datas-01 .datas-wrapper .datas__box {
-    margin-bottom: 0;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: data-01;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .single-datas-01 .datas-wrapper .datas__box:nth-of-type(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: data-02;
-  }
-  .single-datas-01 .datas-wrapper .datas__box:last-of-type {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: data-03;
-  }
-  .single-datas-01 .datas-wrapper .datas__box:not(:last-of-type) {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1152px) {
-  .single-datas-01 .datas-wrapper {
-    margin: 0 auto;
-    max-width: 1152px;
-    padding: 20px calc((100vw - 1152px) / 2);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .single-gallery {
   max-width: 100vw;
   height: auto;
@@ -1528,6 +1320,39 @@
   .single-gallery-wrapper .single-gallery-item__image {
     width: 100%;
     height: calc((1152px - 80px) / 16 * 9 / 3);
+  }
+}
+
+.map {
+  max-width: 100vw;
+  margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.map-image {
+  width: calc(100vw - 40px);
+  height: calc((100vw - 40px) * 0.4323);
+  max-height: 498px;
+  background: url("./images/enklawa_polany/map_clear_resized.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .map {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1192px) {
+  .map-image {
+    max-width: 1152px;
   }
 }
 

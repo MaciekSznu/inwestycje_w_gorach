@@ -37,30 +37,3 @@
     padding-bottom: 96px;
   }
 }
-
-//single
-.map {
-  max-width: 100vw;
-  margin-bottom: 64px;
-  display: flex;
-  justify-content: center;
-
-  &-image {
-    width: calc(100vw - 40px);
-    height: calc((100vw - 40px) * 0.4323);
-    max-height: 498px;
-    background: url("./images/enklawa_polany/map_clear_resized.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  @media screen and (min-width: 768px) {
-    padding: 0;
-    margin-bottom: 80px;
-  }
-
-  @media screen and (min-width: 1192px) {
-    &-image {
-      max-width: 1152px;
-    }
-  }
-}
